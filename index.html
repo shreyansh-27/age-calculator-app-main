@@ -1,37 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@300;700&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="date-input flex-item">
+        <div class="ipt-box">
+          <p>DAY</p>
+          <input
+            type="number"
+            min="1"
+            max="31"
+            name="day"
+            id=""
+            placeholder="DD"
+            required
+            minlength="1"
+            maxlength="2"
+          />
+          <span>Must be a valid date</span>
+        </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <div class="ipt-box">
+          <p>MONTH</p>
+          <input
+            type="number"
+            name="month"
+            min="1"
+            max="12"
+            id=""
+            placeholder="MM"
+            required
+          />
+          <span>Must be a valid month</span>
+        </div>
 
-  Day
-  DD
+        <div class="ipt-box">
+          <p>YEAR</p>
+          <input
+            type="number"
+            name="year"
+            id=""
+            placeholder="YYYY"
+            min="1900"
+            max="2023"
+            required
+          />
+          <span>Must be a valid year</span>
+        </div>
+      </div>
+      
+      <div class="line">
+        <hr class="solid">
+        <div class="circle flex-item">
+          <img src="./assets/images/icon-arrow.svg" alt="" />
+        </div>  
+      </div>
+      
 
-  Month
-  MM
+      
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="display flex-item">
+        <p><span class="dash">- -</span> years</p>
+        <p><span class="dash">- -</span> months</p>
+        <p><span class="dash">- -</span> days</p>
+      </div>
+    </div>
+  </body>
 </html>
