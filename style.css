@@ -98,7 +98,7 @@ hr.solid {
 }
 
 input:empty {
-    border: 2px solid black;
+    border: 2px solid hsl(0, 0%, 80%);
 }
 
 input:invalid {
