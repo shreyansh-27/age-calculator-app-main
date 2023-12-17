@@ -97,12 +97,17 @@ hr.solid {
     color: hsl(259, 100%, 65%);
 }
 
-input:invalid {
-  border: 2px solid hsl(0, 100%, 67%);
+input:empty {
+    border: 2px solid black;
 }
 
+input:invalid {
+    border: 2px solid hsl(0, 100%, 67%);
+}
+
+
 input:valid {
-    border: 2px solid black;
+    border: 2px solid hsl(0, 0%, 80%);
   }
 
 .ipt-box {
